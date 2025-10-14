@@ -1,0 +1,321 @@
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* Убираем стандартные отступы браузера */
+    padding: 0;
+    /* Убираем стандартные внутренние отступы */
+    background: linear-gradient(135deg, #e10f7bb6 0%, #11d7f1 100%);
+    /* Красивый градиентный фон всей страницы */
+    min-height: 100vh;
+    /* Минимальная высота равна высоте окна браузера */
+}
+
+/* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
+main {
+    max-width: 1200px;
+    /* Максимальная ширина контента */
+    margin: 0 auto;
+    /* Центрирование контейнера по горизонтали */
+    background: white;
+    /* Белый фон для основного содержимого */
+    min-height: 100vh;
+    /* Минимальная высота равна высоте окна браузера */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.476);
+    /* Легкая тень вокруг всего контента */
+}
+
+/* ===== ШАПКА ===== */
+header {
+    background: linear-gradient(135deg, #2a2d30 0%, #454d55 100%);
+    /* Темный
+градиентный фон */
+    color: white;
+    /* Белый цвет текста */
+    text-align: center;
+    /* Выравнивание текста по центру */
+    padding: 30px;
+    /* Внутренние отступы со всех сторон */
+    font-size: 28px;
+    /* Размер шрифта */
+    font-weight: 300;
+    /* Легкое начертание шрифта */
+    letter-spacing: 2px;
+    /* Расстояние между буквами */
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+nav {
+    background: #31363a;
+    /* Темно-серый фон навигации */
+    padding: 20px 0;
+    /* Вертикальные отступы */
+}
+
+.nav-list {
+    list-style: none;
+    /* Убираем маркеры списка */
+    margin: 0;
+    /* Убираем внешние отступы */
+    padding: 0;
+    /* Убираем внутренние отступы */
+    display: flex;
+    /* Горизонтальное расположение элементов */
+    justify-content: center;
+    /* Выравнивание по центру */
+    gap: 25px;
+    /* Расстояние между элементами навигации */
+}
+
+.nav-item {
+    margin: 0;
+    /* Убираем отступы у пунктов меню */
+}
+
+.nav-link {
+    color: white;
+    /* Белый цвет текста ссылок */
+    text-decoration: none;
+    /* Убираем подчеркивание ссылок */
+    padding: 12px 25px;
+    /* Отступы внутри ссылок */
+    border-radius: 25px;
+    /* Скругленные углы (капсульная форма) */
+    transition: all 0.3s ease;
+    /* Плавные анимации при изменении */
+    font-weight: 500;
+    /* Средняя жирность шрифта */
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+    /* Легкое поднятие элемента при наведении */
+    transition: all 0.6s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    /* Полупрозрачный белый фон при наведении*/
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.content {
+    padding: 40px;
+    /* Внутренние отступы контента */
+    max-width: 1000px;
+    /* Максимальная ширина контента */
+    margin: 0 auto;
+    /* Центрирование контента */
+}
+
+/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
+.profile-header {
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+.profile-title {
+    font-size: 32px; /* Размер шрифта заголовка */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    margin-bottom: 10px; /* Отступ снизу */
+    font-weight: 300; /* Легкое начертание шрифта */
+}
+
+.profile-photo {
+    width: 220px; /* Фиксированная ширина фото */
+    height: 280px; /* Фиксированная высота фото */
+    border-radius: 15px; /* Скругленные углы фото */
+    object-fit: cover; /* Обрезка фото для сохранения пропорций */
+    margin: 20px auto; /* Центрирование и отступы */
+    border: 2px solid #222844; /* Синяя рамка вокруг фото */
+    box-shadow: 0 8px 25px rgba(42, 50, 85, 0.3); /* Тень с синим оттенком */
+}
+
+.profile-name {
+    font-size: 24px; /* Размер шрифта имени */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    margin: 10px 0; /* Вертикальные отступы */
+    font-weight: 500; /* Средняя жирность шрифта */
+}
+
+.profile-group {
+    font-size: 18px; /* Размер шрифта группы */
+    color: #7f8c8d; /* Серый цвет текста */
+    margin: 5px 0; /* Вертикальные отступы */
+}
+
+.about-me {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Светлый градиентный фон */
+    padding: 15px; /* Внутренние отступы */
+    border-radius: 15px; /* Скругленные углы */
+    margin: 30px 0; /* Вертикальные отступы */
+    border-left: 5px solid #667eea; /* Синяя полоса слева */
+    font-size: 16px; /* Размер шрифта текста */
+    line-height: 1.8; /* Межстрочный интервал */
+}
+
+/* ===== НАВЫКИ ===== */
+.skills-container {
+    display: flex; /* Горизонтальное расположение навыков */
+    justify-content: center; /* Выравнивание по центру */
+    flex-wrap: wrap; /* Перенос на новую строку при необходимости */
+    gap: 15px; /* Расстояние между навыками */
+    margin: 30px 0; /* Вертикальные отступы */
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Голубой градиентный фон */
+    color: white; /* Белый цвет текста */
+    padding: 12px 25px; /* Внутренние отступы */
+    border-radius: 25px; /* Круглые углы (капсульная форма) */
+    font-weight: 600; /* Жирный шрифт */
+    font-size: 14px; /* Размер шрифта */
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3); /* Тень с голубым оттенком */
+    transition: all 0.3s ease; /* Плавные анимации при изменении */
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px); /* Поднятие элемента при наведении */
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4); /* Увеличение тени при наведении */
+}
+
+/* ===== ОПЫТ РАБОТЫ ===== */
+.experience-section {
+    margin-top: 50px; /* Отступ сверху */
+}
+.section-title {
+    font-size: 28px; /* Размер шрифта заголовка секции */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 30px; /* Отступ снизу */
+    font-weight: 300; /* Легкое начертание шрифта */
+}
+.experience-card {
+    background: white; /* Белый фон карточки */
+    padding: 25px; /* Внутренние отступы */
+    margin: 20px 0; /* Вертикальные отступы */
+    border-radius: 12px; /* Скругленные углы */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Легкая тень */
+    border-left: 4px solid #667eea; /* Синяя полоса слева */
+    transition: transform 0.3s ease; /* Плавная анимация трансформации */
+}
+
+.experience-card:hover {
+    transform: translateX(5px); /* Сдвиг вправо при наведении */
+}
+.experience-title {
+    font-size: 20px; /* Размер шрифта заголовка опыта */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    margin: 0 0 10px 0; /* Отступ снизу */
+    font-weight: 600; /* Жирный шрифт */
+}
+.experience-desc {
+    color: #7f8c8d; /* Серый цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin: 0; /* Убираем отступы */
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+    background: linear-gradient(135deg, #2a2d30 0%, #454d55 100%); /* Темный
+    градиентный фон */
+    color: white; /* Белый цвет текста */
+    text-align: center; /* Выравнивание по центру */
+    padding: 30px; /* Внутренние отступы */
+    margin-top: 50px; /* Отступ сверху */
+
+}
+
+
+.products-header {
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    gap: 25px
+}
+
+.product-item {
+    box-shadow: 0 8px 25px ;
+    border-radius: 15px;
+    max-width: 45%;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.178);
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+.product-name {
+    text-align: center;
+    font-size: 20px
+
+}
+
+.product-img {
+    display: block;
+    width: 220px; /* Фиксированная ширина фото */
+    height: 330px; /* Фиксированная высота фото */
+    border-radius: 15px; /* Скругленные углы фото */
+    object-fit: cover; /* Обрезка фото для сохранения пропорций */
+    margin: 20px auto; /* Центрирование и отступы */
+    border: 1px solid #1e1e1f; /* Синяя рамка вокруг фото */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Тень с синим оттенком */
+}
+
+.product-price {
+    font-weight: 400;
+    color: #e74c3c;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    gap: 25px
+}
+
+.news-container {
+    border: 0.2px solid;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.074);
+}
+.news-container:hover {
+    transform: translateY(-2px);
+    transition: all 0.6s ease;
+}
+
+.news-header {
+
+}
+
+.news-desc {
+
+}
+
+.contact-info {
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.14);
+}
+.contact-button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}

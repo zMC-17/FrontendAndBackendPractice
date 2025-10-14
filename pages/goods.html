@@ -5,43 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Личный сайт</h1>
-    </header>
-    <nav>
-        <ul class="navbar">
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="./news.html">Новости</a></li>
-            <li><a href="./practices.html">Практики</a></li>
-            <li><a href="./goods.html">Товары</a></li>
-            <li><a href="./contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <article>
-                <h2>Fender Stratocaster</h2>
-                <img src="../media/stratocaster.png" alt="Fender Stratocaster" width="350">
-                <div><b>124'000.00 ₽</b></div>
-            </article>
-            <article>
-                <h2>Fender Mustang competition</h2>
-                <img src="../media/mustang.jpg" alt="Fender mustang" width="350">
-                <div><b>117'000.00 ₽</b></div>
-            </article>
-            <article>
-                <h2>Fender Jazzmaster</h2>
-                <img src="../media/jazzmaster.jpg" , alt="Fender Jazzmaster" width="350">
-                <div><b>97'000.00 ₽</b></div>
-            </article>
-        </section>
+        <header><h1>Товары</h1></header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="./news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="./practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="./goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="products-header">Наши товары</h2>
+
+            <section class="product-grid">
+                <article class="product-item">
+                    <img class="product-img" src="../media/stratocaster.png" alt="Fender Stratocaster">
+                    <h2 class="product-name">Fender Stratocaster</h2>
+                    <div class="product-price"><b>124'000.00 ₽</b></div>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="../media/mustang.jpg" alt="Fender mustang">
+                    <h2 class="product-name">Fender Mustang competition</h2>
+                    <div class="product-price"><b>117'000.00 ₽</b></div>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="../media/jazzmaster.jpg" , alt="Fender Jazzmaster">
+                    <h2 class="product-name">Fender Jazzmaster</h2>
+                    <div class="product-price"><b>97'000.00 ₽</b></div>
+                </article>
+            </section>
+        </div>
+
+        <footer>2025. На права не сдал</footer>
     </main>
-    <footer>
-        2025. На права не сдал
-    </footer>
 </body>
 
 </html>
