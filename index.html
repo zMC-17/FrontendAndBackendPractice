@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
-    <main>
-        <header><h1>Man moment</h1></header>
-        <nav>
+    <div class="page-container">
+
+        <header class="header">
+            <h1>Масик</h1>
+        </header>
+        <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -20,55 +23,57 @@
                 <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
             </ul>
         </nav>
-
-        <div class="content">
-
-            <section class="profile-header">
+        <main class="content">
+            <article class="profile-header">
                 <h1 class="profile-title">Информация об авторе</h1>
-                    <img class="profile-photo" src="media/IMG_1683.jpg" alt="Фото автора">
-                    <h2 class="profile-name">Стропус Герман Денисович</h2>
-                    <p class="profile-group">ЭФБО-01-24</p>
-            </section>
+                <img class="profile-photo" src="media/IMG_1683.jpg" alt="Фото автора">
+                <h2 class="profile-name">Стропус Герман Денисович</h2>
+                <p class="profile-group">ЭФБО-01-24</p>
+            </article>
 
             <section class="about-me">
-                <h2>
-                    Обо мне
-                </h2>
-                <p>
-                    Примерный семьянин<br>
-                    Стопроцентный славянин<br>
-                    под известным псевдонимом был до репа знаменит<br>
-                </p>
+                <h2>Обо мне</h2>
+                <p>Примерный семьянин,
+                    Стопроцентный славянин,
+                    Под известным псевдонимом был до репа знаменит.
+                    Ты занял деньги в ломбарде
+                    - зачем 1239 пин-код к моей дебетной карте</p>
             </section>
 
             <section class="skills-container">
-                <h3>Навыки</h3>
-                <div class="skill-tag">Дипломированный сомелье</div>
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">Веб инструменты: HTML, CSS</div>
+                <h2>Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Дипломированный сомелье</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Веб инструменты: HTML, CSS</div>
+                    <div class="skill-tag">Навык 4</div>
+                </div>
             </section>
 
             <section class="experience-section">
                 <h2 class="section-title">Мой опыт работы</h2>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Однажды я пытался мышь есть</p>
+                    </article>
 
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 1</h3>
-                    <p class="experience-desc">Однажды я пытался мышь есть</p>
-                </div>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">На первом курсе меня вербовало МИ-6.</p>
+                    </article>
 
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 2</h3>
-                    <p class="experience-desc">На первом курсе меня вербовало МИ-6.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 2</h3>
-                    <p class="experience-desc">Генеральный директор генеральной дирекции "ООО" Тмыв денег</p>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Генеральный директор генеральной дирекции "ООО" Тмыв денег</p>
+                    </article>
                 </div>
             </section>
-        </div>
-        <footer>2025. На права не сдал</footer>
-    </main>
+        </main>
+        <footer class="footer">
+            <p>2025. На права не сдал</p>
+        </footer>
+    </div>
 </body>
 
 </html>

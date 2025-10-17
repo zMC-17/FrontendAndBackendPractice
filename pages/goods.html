@@ -9,9 +9,11 @@
 </head>
 
 <body>
-    <main>
-        <header><h1>Товары</h1></header>
-        <nav>
+    <div class="page-container">
+        <header class="header">
+            <h1>Товары</h1>
+        </header>
+        <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="./news.html">Новости</a></li>
@@ -20,31 +22,27 @@
                 <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
-
-        <div class="content">
+        <main class="products-section">
             <h2 class="products-header">Наши товары</h2>
-
-            <section class="product-grid">
-                <article class="product-item">
-                    <img class="product-img" src="../media/stratocaster.png" alt="Fender Stratocaster">
+            <div class="products-grid">
+                <article class="product-card">
+                    <img class="product-image" src="../media/stratocaster.png" alt="Fender Stratocaster">
                     <h2 class="product-name">Fender Stratocaster</h2>
                     <div class="product-price"><b>124'000.00 ₽</b></div>
                 </article>
-                <article class="product-item">
-                    <img class="product-img" src="../media/mustang.jpg" alt="Fender mustang">
+                <article class="product-card">
+                    <img class="product-image" src="../media/mustang.jpg" alt="Fender mustang">
                     <h2 class="product-name">Fender Mustang competition</h2>
                     <div class="product-price"><b>117'000.00 ₽</b></div>
                 </article>
-                <article class="product-item">
-                    <img class="product-img" src="../media/jazzmaster.jpg" , alt="Fender Jazzmaster">
+                <article class="product-card">
+                    <img class="product-image" src="../media/jazzmaster.jpg" , alt="Fender Jazzmaster">
                     <h2 class="product-name">Fender Jazzmaster</h2>
                     <div class="product-price"><b>97'000.00 ₽</b></div>
                 </article>
-            </section>
-        </div>
-
+            </div>
+        </main>
         <footer>2025. На права не сдал</footer>
-    </main>
+    </div>
 </body>
-
 </html>

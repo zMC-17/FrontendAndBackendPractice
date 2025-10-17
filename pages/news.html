@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <main>
-        <header>
+    <div class="page-container">
+        <header class="header">
             <h1>Новости</h1>
         </header>
-        <nav>
+        <nav class=nav>
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="./news.html">Новости</a></li>
@@ -22,33 +22,33 @@
                 <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <section class="news-grid">
-                <article class="news-container">
-                    <h2 class="news-header">Новость №1</h2>
-                    <small><i>19.05.2006</i></small>
-                    <div class="news-desc">Набрать массу легко! Нужно всего лишь пить по утрам обычный совестский...
-                    </div>
-                </article>
+        <main class="content">
+            <div news-section>
+                <section class="news-container">
+                    <article class="news-card">
+                        <h2 class="news-title">Новость №1</h2>
+                        <p class="news-meta">19.05.2006</p>
+                        <div class="news-text">Набрать массу легко! Нужно всего лишь пить по утрам обычный совестский...</div>
+                    </article>
 
-                <article class="news-container">
-                    <h2 class="news-header">Новость №2</h2>
-                    <small><i>19.05.2016</i></small>
-                    <div class="news-desc">Шок!!! Гитлер был нацистом...</div>
-                </article>
+                    <article class="news-card">
+                        <h2 class="news-title">Новость №2</h2>
+                        <p class="news-meta">19.05.2016</p>
+                        <div class="news-text">Шок!!! Гитлер был нацистом...</div>
+                    </article>
 
-                <article class="news-container">
-                    <h2 class="news-header">Новость №3</h2>
-                    <small><i>14.05.88</i></small>
-                    <div class="news-desc">В продаже появились генеральские котлы</div>
-                </article>
-            </section>
-        </div>
-
-        <footer>
+                    <article class="news-card">
+                        <h2 class="news-title">Новость №3</h2>
+                        <p class="news-meta">14.05.88</p>
+                        <div class="news-text">В продаже появились генеральские котлы</div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
             2025. На права не сдал
         </footer>
-    </main>
+    </div class="page-container">
 </body>
 
 
