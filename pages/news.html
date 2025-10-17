@@ -9,46 +9,52 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Новости</h1>
+            <h1 class="header__title">Новости</h1>
         </header>
         <nav class=nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="./news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="./practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="./goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="./news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="./practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link" href="./goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <main class="content">
+        <main class="main">
             <div news-section>
-                <section class="news-container">
-                    <article class="news-card">
-                        <h2 class="news-title">Новость №1</h2>
-                        <p class="news-meta">19.05.2006</p>
-                        <div class="news-text">Набрать массу легко! Нужно всего лишь пить по утрам обычный совестский...</div>
-                    </article>
+                <section class="news">
+                    <h2 class="news__title">Актуальные новости</h2>
+                    <div class="news__list">
+                        <article class="news-item">
+                            <h2 class="news-item__title">Новость №1</h2>
+                            <p class="news-item__date">19.05.2006</p>
+                            <div class="news-item__text">Набрать массу легко! Нужно всего лишь пить по утрам обычный
+                                совестский...</div>
+                        </article>
 
-                    <article class="news-card">
-                        <h2 class="news-title">Новость №2</h2>
-                        <p class="news-meta">19.05.2016</p>
-                        <div class="news-text">Шок!!! Гитлер был нацистом...</div>
-                    </article>
+                        <article class="news-item">
+                            <h2 class="news-item__title">Новость №2</h2>
+                            <p class="news-item__date">19.05.2016</p>
+                            <div class="news-item__text">Шок!!! Гитлер был нацистом...</div>
+                        </article>
 
-                    <article class="news-card">
-                        <h2 class="news-title">Новость №3</h2>
-                        <p class="news-meta">14.05.88</p>
-                        <div class="news-text">В продаже появились генеральские котлы</div>
-                    </article>
+                        <article class="news-item">
+                            <h2 class="news-item__title">Новость №3</h2>
+                            <p class="news-item__date">14.05.88</p>
+                            <div class="news-item__text">В продаже появились генеральские котлы</div>
+                        </article>
+                    </div>
                 </section>
             </div>
         </main>
+
         <footer class="footer">
-            2025. На права не сдал
+            <p class="footer__text">&copy; 2025. На права не сдал</p>
         </footer>
-    </div class="page-container">
+
+    </div>
 </body>
 
 

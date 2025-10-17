@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="../style/styles.css">
     <style>
         /* Стили для модального окна */
@@ -23,6 +23,13 @@
             width: 90vw;
             max-height: 90vh;
             overflow-y: auto;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            /* сбрасываем стандартные отступы */
         }
 
         .modal-header {
@@ -160,42 +167,50 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Контакты</h1>
+            <h1 class="header__title">Контакты</h1>
         </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="./news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="./practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="./goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
+
+        <nav class=nav>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="./news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="./practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link" href="./goods.html">Товары</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <main class="content">
-            <section class="contacts-container">
-                <article class="contact-info">
-                    <h3>Способы связаться</h3>
-                    <p>RaTaTaTa@mail.com</p>
-                    <p>+7-777-888-07-57</p>
+        <main class="main">
 
-                </article>
-                <article class="contact-info">
-                    <h3>Мы на карте</h3>
-                    <p>Москва, 11 Парковая, 36</p>
-                </article>
 
-                <article class="contact-info">
-                    <h3>Время работы</h3>
-                    <p>8:00 - 19:30</p>
-                </article>
+            <section class="contacts">
 
+                <h2 class="contacts__title">Наши контакты</h2>
+
+                <div class="contacts__list">
+
+                    <article class="contact-item">
+                        <h3 class="contact-item__title">Способы связаться</h3>
+                        <p class="contact-item__value">RaTaTaTa@mail.com</p>
+                        <p class="contact-item__value">+7-777-888-07-57</p>
+                    </article>
+                    <article class="contact-item">
+                        <h3 class="contact-item__title">Мы на карте</h3>
+                        <p class="contact-item__value">Москва, 11 Парковая, 36</p>
+                    </article>
+
+                    <article class="contact-item">
+                        <h3 class="contact-item__title">Время работы</h3>
+                        <p class="contact-item__value">8:00 - 19:30</p>
+                    </article>
+
+                </div>
                 <button class="contact-button" onclick="contactModal.showModal()">Оставить заявку</button>
             </section>
         </main>
         <footer class="footer">
-            © 2025. На права не сдал
+            <p class="footer__text">&copy; 2025. На права не сдал</p>
         </footer>
 
         <dialog id="contactModal">
